@@ -1,0 +1,233 @@
+.ingredients {
+  margin-top: 100px;
+
+  .ingr-row {
+    display: flex;
+    gap: 40px;
+
+    .ingredient-left {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      width: 840px;
+
+      .inl-top {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+
+        .ing-title {
+          font-size: 36px;
+          font-weight: 600;
+          color: #000;
+        }
+
+        .ing-title-two {
+          margin-top: 38px;
+          font-size: 24px;
+          font-weight: 600;
+          color: #000;
+          margin-bottom: 32px;
+        }
+
+        .check-form-ingr {
+          .form-check {
+            margin-bottom: 32px;
+            input {
+              background-color: inherit;
+              width: 24px;
+              height: 24px;
+              border-radius: 50%;
+              margin-right: 24px;
+
+              &:checked {
+                background-color: #000;
+
+                + .form-check-label {
+                  text-decoration: line-through;
+                  color: gray;
+                }
+              }
+            }
+
+            .form-check-label {
+              font-weight: 400;
+              font-size: 18px;
+              color: #000;
+            }
+          }
+
+          .hr-check {
+            border: 1px solid rgba(0, 0, 0, 0.1);
+          }
+        }
+      }
+
+      .inl-bottom {
+        .inlb-title {
+          font-size: 24px;
+          font-weight: 600;
+          color: rgba(0, 0, 0, 1);
+          margin-bottom: 32px;
+          margin-top: 64px;
+        }
+
+        .check-form-ingr-b {
+          .form-check-b {
+            margin-bottom: 32px;
+            input {
+              background-color: inherit;
+              width: 24px;
+              height: 24px;
+              border-radius: 50%;
+              margin-right: 24px;
+
+              &:checked {
+                background-color: #000;
+
+                + .form-check-label {
+                  text-decoration: line-through;
+                  color: gray;
+                }
+              }
+            }
+
+            .form-check-label {
+              font-weight: 400;
+              font-size: 18px;
+              color: #000;
+            }
+          }
+
+          .hr-check {
+            border: 1px solid rgba(0, 0, 0, 0.1);
+          }
+        }
+      }
+
+      .inl-middle {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        margin-top: 80px;
+
+        .inlm-title {
+          font-weight: 600;
+          font-size: 36px;
+          color: rgba(0, 0, 0, 1);
+          margin-bottom: 35px;
+        }
+
+        .inlm-check {
+          display: flex;
+          flex-direction: column;
+          justify-content: start;
+
+          .form-check-dir {
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+            gap: 24px;
+            margin-top: 20px;
+
+            .direction-check {
+              width: 24px;
+              height: 24px;
+              border-radius: 50%;
+              // background-color: inherit;
+
+              &:checked {
+                background-color: #000;
+              }
+            }
+
+            div {
+              display: flex;
+              flex-direction: column;
+              gap: 24px;
+
+              label {
+                font-weight: 600;
+                font-size: 24px;
+                color: rgba(0, 0, 0, 1);
+              }
+
+              p {
+                font-size: 18px;
+                font-weight: 400;
+                color: rgba(0, 0, 0, 0.6);
+              }
+
+              img {
+                width: 792px;
+                height: 400px;
+                border-radius: 20px;
+                margin-bottom: 24px;
+              }
+            }
+          }
+
+          .inlm-hr {
+            border: 0.2px solid rgba(0, 0, 0, 0.1);
+          }
+        }
+      }
+    }
+
+    .ingredient-right {
+      width: 440px;
+
+      .ir-title {
+        font-size: 32px;
+        font-weight: 600;
+        color: rgba(0, 0, 0, 1);
+      }
+
+      .ir-top {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        gap: 24px;
+        margin-bottom: 80px;
+
+        .irt-item {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+          gap: 14px;
+
+          img {
+            width: 180px;
+            height: 120px;
+            border-radius: 30px;
+          }
+
+          .irti-text {
+            h3 {
+              width: 196px;
+              font-weight: 600;
+              font-size: 20px;
+              color: rgba(0, 0, 0, 1);
+              margin-bottom: 16px;
+            }
+
+            h4 {
+              font-weight: 500;
+              font-size: 14px;
+              color: rgba(0, 0, 0, 0.6);
+            }
+          }
+        }
+      }
+
+      .ir-bottom {
+        img {
+          width: 440px;
+          height: 434px;
+          object-fit: contain;
+        }
+      }
+    }
+  }
+}
